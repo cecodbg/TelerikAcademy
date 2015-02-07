@@ -12,19 +12,26 @@ namespace MaximalIncreasingSequence
     {
         static void Main(string[] args)
         {
-            int[] arr = new int[10];
+            Console.WriteLine("Enter numbers for the array: ");
+            string[] stringNumbersArray = Console.ReadLine().Split(new char[] { ' ', ',', '.' }, StringSplitOptions.RemoveEmptyEntries);
+            int[] array = new int[10];
+            for (int i = 0; i < stringNumbersArray.Length; i++)
+            {
+                array[i] = (int.Parse(stringNumbersArray[i]));
+            }
+
             int currentCount = 1;
             int maxCount = 0;
             int num = 0;
 
-            for (int i = 0; i < arr.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
-                arr[i] = int.Parse(Console.ReadLine());
+                array[i] = int.Parse(Console.ReadLine());
             }
 
-            for (int i = 0; i < arr.Length - 1; i++)
+            for (int i = 0; i < array.Length - 1; i++)
             {
-                if (arr[i + 1] - arr[i] == 1)
+                if (array[i + 1] - array[i] == 1)
                 {
                     currentCount++;
                 }
@@ -36,7 +43,7 @@ namespace MaximalIncreasingSequence
                 if (currentCount >= maxCount)
                 {
                     maxCount = currentCount;
-                    num = arr[i + 2 - (maxCount)];
+                    num = array[i + 2 - (maxCount)];
                 }
             }
 

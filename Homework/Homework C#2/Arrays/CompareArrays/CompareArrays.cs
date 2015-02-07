@@ -12,39 +12,28 @@ namespace CompareArrays
     {
         static void Main(string[] args)
         {
-            int[] arr1 = new int[10];
-            int[] arr2 = new int[10];
 
-            for (int i = 0; i < arr1.Length; i++)
+            Console.WriteLine("Enter numbers for first Array: ");
+            string[] stringFirstArray = Console.ReadLine().Split(new char[] { ' ', ',', '.' }, StringSplitOptions.RemoveEmptyEntries);
+            int[] firstArray = new int[stringFirstArray.Length];
+            for (int i = 0; i < stringFirstArray.Length; i++)
             {
-                arr1[i] = int.Parse(Console.ReadLine());
+                firstArray[i] = (int.Parse(stringFirstArray[i]));
             }
 
-            for (int i = 0; i < arr2.Length; i++)
+            Console.WriteLine("Enter numbers for second Array: ");
+            string[] stringSecondArray = Console.ReadLine().Split(new char[] { ' ', ',', '.' }, StringSplitOptions.RemoveEmptyEntries);
+            int[] secondArray = new int[stringSecondArray.Length];
+            for (int i = 0; i < stringSecondArray.Length; i++)
             {
-                arr2[i] = int.Parse(Console.ReadLine());
+                secondArray[i] = (int.Parse(stringSecondArray[i]));
             }
 
-            for (int i = 0; i < arr1.Length; i++)
+            for (int i = 0; i < firstArray.Length; i++)
             {
-                Console.Write("{0, 3}", arr1[i]);
-            }
-            Console.WriteLine();
-
-            for (int i = 0; i < arr2.Length; i++)
-            {
-                Console.Write("{0, 3}", arr2[i]);
-            }
-            Console.WriteLine();
-
-            for (int i = 0; i < arr1.Length; i++)
-            {
-                for (int j = 0; j < arr2.Length; j++)
+                if (firstArray[i] == secondArray[i])
                 {
-                    if (arr1[i] == arr2[j])
-                    {
-                        Console.WriteLine("Element from arr1 of position {0} is equal to element from arr2 of position {1} ", i, j);
-                    }
+                    Console.WriteLine("Element from first Array {0} of position {1} is equal to \nelement from second Array {2} of position {3} ", firstArray[i], i, secondArray[i], i);
                 }
             }
         }

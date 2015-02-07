@@ -12,39 +12,27 @@ namespace CompareCharArrays
     {
         static void Main(string[] args)
         {
-            char[] arr1 = new char[5];
-            char[] arr2 = new char[5];
-
-            for (int i = 0; i < arr1.Length; i++)
+            Console.WriteLine("Enter char for first Array: ");
+            string[] stringFirstArray = Console.ReadLine().Split(new char[] { ' ', ',', '.' }, StringSplitOptions.RemoveEmptyEntries);
+            char[] firstArray = new char[stringFirstArray.Length];
+            for (int i = 0; i < stringFirstArray.Length; i++)
             {
-                arr1[i] = char.Parse(Console.ReadLine());
+                firstArray[i] = (char.Parse(stringFirstArray[i]));
             }
 
-            for (int i = 0; i < arr2.Length; i++)
+            Console.WriteLine("Enter char for second Array: ");
+            string[] stringSecondArray = Console.ReadLine().Split(new char[] { ' ', ',', '.' }, StringSplitOptions.RemoveEmptyEntries);
+            char[] secondArray = new char[stringSecondArray.Length];
+            for (int i = 0; i < stringSecondArray.Length; i++)
             {
-                arr2[i] = char.Parse(Console.ReadLine());
+                secondArray[i] = (char.Parse(stringSecondArray[i]));
             }
 
-            for (int i = 0; i < arr1.Length; i++)
+            for (int i = 0; i < firstArray.Length; i++)
             {
-                Console.Write("{0, 2}", arr1[i]);
-            }
-            Console.WriteLine();
-
-            for (int i = 0; i < arr2.Length; i++)
-            {
-                Console.Write("{0, 2}", arr2[i]);
-            }
-            Console.WriteLine();
-
-            for (int i = 0; i < arr1.Length; i++)
-            {
-                for (int j = 0; j < arr2.Length; j++)
+                if (firstArray[i] == secondArray[i])
                 {
-                    if (arr1[i] == arr2[j])
-                    {
-                        Console.WriteLine("Char from arr1 of position {0} is equally to char from arr2 of position {1} ", i, j);
-                    }
+                    Console.WriteLine("Char from first Array {0} of position {1} is equal to \nchar from second Array {2} of position {3} ", firstArray[i], i, secondArray[i], i);
                 }
             }
         }
