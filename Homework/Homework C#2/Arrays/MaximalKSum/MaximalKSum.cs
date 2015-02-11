@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Write a program that reads two integer numbers N and K and an array of N elements from the console.
+// Find in the array those K elements that have maximal sum.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +30,10 @@ namespace MaximalKSum
             for (int i = array.Length - 1; i > array.Length - 1 - kSum; i--)
             {
                 sumMax += array[i];
+                Console.Write("Element is:");
+                Console.WriteLine("{0} ", array[i]);
             }
+            Console.WriteLine();
             Console.WriteLine(sumMax);
         }
     }
