@@ -14,13 +14,20 @@ namespace SortByStringLength
         {
             string[] citys = {"Sofia", "Varna", "Burgas", "Ruse", "Plovdiv", "Pleven"};
 
-            Array.Sort(citys, (x, y) => x.Length.CompareTo(y.Length));
+            //Array.Sort(citys, (x, y) => x.Length.CompareTo(y.Length));
 
-            foreach (var item in citys)
+            //foreach (var item in citys)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine();
+
+            citys = citys.OrderBy(s => s.Length).ToArray();
+
+            foreach (var word in citys)
             {
-                Console.WriteLine(item);
+                Console.WriteLine("{0,-6}{1}", word.Length, word);
             }
-            Console.WriteLine();
         }
     }
 }
