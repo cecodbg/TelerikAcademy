@@ -30,7 +30,7 @@ namespace DecimalToHexadecimal
                 }
             }
             convert.Reverse();
-            Console.WriteLine("Number after convert is: {0}", string.Join("", convert));
+            Console.WriteLine("Number after convert is: 0x{0}", string.Join("", convert));
         }
     }
 }

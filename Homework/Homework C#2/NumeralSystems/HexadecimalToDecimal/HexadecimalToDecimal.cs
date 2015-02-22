@@ -12,14 +12,14 @@ namespace HexadecimalToDecimal
     {
         static void Main()
         {
-            Console.Write("Enter number to convert: ");
+            Console.Write("Enter number to convert 0x... : ");
             string[] str = Console.ReadLine()
                                   .Select(x => x.ToString())
                                   .Reverse()
                                   .ToArray();
 
             int number = 0;
-            for (int i = 0; i < str.Length; i++)
+            for (int i = 0; i < str.Length - 2; i++)
             {
                 int a = 0;
                 bool isCorect = int.TryParse(str[i], out a);

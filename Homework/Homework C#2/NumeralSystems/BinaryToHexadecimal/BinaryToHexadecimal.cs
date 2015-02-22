@@ -12,6 +12,7 @@ namespace BinaryToHexadecimal
     {
         static void Main()
         {
+
         }
     }
 }
