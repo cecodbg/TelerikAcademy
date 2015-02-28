@@ -13,8 +13,7 @@ namespace ExtractTextFromHTML
     {
         static void Main()
         {
-            string inputString = @"<html>
-<head><title>News</title></head><body><p><a href=""http://academy.telerik.com"">TelerikAcademy</a>aims to provide free real-world practical training for young people who want to turn intoskilful .NET software engineers.</p></body></html>";
+            string inputString = @"<html><head><title>News</title></head><body><p><a href=""http://academy.telerik.com"">TelerikAcademy</a>aims to provide free real-world practical training for young people who want to turn intoskilful .NET software engineers.</p></body></html>";
 
             MatchCollection str = Regex.Matches(inputString, @"(?<=^|>)[^><]+?(?=<|$)");
             
