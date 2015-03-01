@@ -52,10 +52,10 @@ namespace Workdays
                         if (dateNow.Date.CompareTo(Holidays[j].Date) == 0)
                         {
                             counter--;
-                        }   
+                        }
                     }
                 }
-                if (endDate.Date.CompareTo(dateNow.Date) == 0)
+                if (endDate.Date.CompareTo(dateNow.Date) == 0 || dateCheck.Date.CompareTo(dateNow.Date) == 0)
                 {
                     break;
                 }
