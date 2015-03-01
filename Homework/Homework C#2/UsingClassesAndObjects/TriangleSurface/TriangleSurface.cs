@@ -6,8 +6,10 @@
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace TriangleSurface
@@ -16,6 +18,8 @@ namespace TriangleSurface
     {
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+
             Console.WriteLine("For calculate the surface of a triangle by given:\nSide and an altitude to it enter 1:\nThree sides enter 2:\nTwo sides and an angle between them enter 3:");
             int choice = int.Parse(Console.ReadLine());
 
