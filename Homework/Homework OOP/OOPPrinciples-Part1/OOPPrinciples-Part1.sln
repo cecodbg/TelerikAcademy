@@ -5,9 +5,9 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. School", "School\01. School.csproj", "{2FF8E251-6187-494E-BF14-E28B86D92890}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsAndWorkers", "StudentsAndWorkers\StudentsAndWorkers.csproj", "{801CA2AC-5E0D-4B19-AB92-8D2C58580A0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.StudentsAndWorkers", "StudentsAndWorkers\02.StudentsAndWorkers.csproj", "{801CA2AC-5E0D-4B19-AB92-8D2C58580A0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalHierarchy", "AnimalHierarchy\AnimalHierarchy.csproj", "{66338A31-557D-4B0C-8DEF-9B9EC3B92215}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.AnimalHierarchy", "AnimalHierarchy\03.AnimalHierarchy.csproj", "{66338A31-557D-4B0C-8DEF-9B9EC3B92215}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
