@@ -70,6 +70,7 @@
     <Content Include="Images\Doge.jpg" />
     <Content Include="Images\Dogi.jpg" />
     <Content Include="profile.html" />
+    <Content Include="styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
