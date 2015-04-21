@@ -1,0 +1,23 @@
+﻿.center {
+    text-align: center;
+}
+
+.width {
+    width: 30px; 
+}
+
+.height {
+    height: 22px;
+}
+
+.right {
+    text-align: right;
+}
+
+#c {
+    text-align: left;
+}
+
+#j {
+    vertical-align: bottom;
+}

@@ -1,0 +1,38 @@
+﻿table, td {
+    background-color: #F4FAFB;
+    border: 1px solid #93CEDB;
+    border-collapse: collapse;
+    padding: 1px;
+    margin: 2px;
+}
+
+.widht {
+    width: 50px;
+}
+
+.height {
+    height: 50px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+#zero {
+    width: 104px;
+}
+
+.button {
+    background-color: #F4FAFB;
+    font-size: 1.5em;
+    color: #93CEDB;
+    text-shadow: 1px 1px 1px #93CEDB;
+}
+
+#text {
+    width: 208px;
+}
